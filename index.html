@@ -1,0 +1,203 @@
+<!-- tappez html5 pour afficher la structure-->
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- commentaire : selectionner la ligne et tappez "ctrl" + "/"" -->
+
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le titre de la page (le plus haut possible après les 2 balises meta de base)-->
+    <title>cour HTML</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcur icon" href="./image/Logo-html5.png">
+</head>
+
+<body>
+    <header>
+        <!-- 1 seul titre h1 par page -->
+        <h1> <i>&#9757</i> Texte - Titre H1</h1>
+        <p>Texte basique <em>Voici un exte en italique</em>
+            <strong>Voici un texte en gras</strong><span>L'élement SPAN ne
+                 revient pas à la ligne</span></p>
+                 <!-- Le "p" revient à la ligne àlors que le "span" non -->
+                 <!-- tappez "lorem" suivis du nombre de caractere voulu pour un texte aléatoire ici : "lorem30" -->
+                 <p>Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Aut ducimus aspernatur, 
+                    doloremque sint molestiae quis laborum ipsa
+                     facere incidunt accusantium totam nemo ipsam, 
+                     placeat saepe pariatur neque! Eaque, vitae sunt?
+                </p>
+    </header>
+    <section>
+                                <!-- IMAGE -->
+        <div>
+            <h2>Photos - Titre H2</h2>
+            <img src="./image/lac-montagne.jpg" height="300" alt="lac-montagne">
+            <!-- "height" donne la taille de la photo -->
+        </div>
+
+
+                                <!-- LISTE -->
+        <div>
+            <h3>Liste - Titre h3</h3>
+            <!-- Liste qui n'est pas ranger UL = Unordered List-->
+            <ul>
+                <!-- "maj" + "alt" + "fleche du bas" pour copier la ligne en dessous -->
+                <li>UL = unordered List/li>
+                <li>LI = element de la liste</li>
+                <li>LI = element de la liste</li>
+                <li>LI = element de la liste</li>
+                <li>LI = element de la liste</li>
+                <li>LI = element de la liste</li>
+            </ul>
+            <!-- Liste OL = Lise numeroté -->
+            <ol>
+                <li>OL= Oredered List</li>
+                <li>Element de la liste</li>
+                <li>Element de la liste</li>
+                <li>Element de la liste</li>
+                <li>Element de la liste</li>
+            </ol>
+        </div>
+
+                                <!-- TABLEAU -->
+        <div>
+            <h4>Tableaux - Titre h4</h4>
+            <table border="1" width="50%" > 
+                <!-- "border" = trait d'epaisseur de la bordure : 1 -->
+                <!-- "width" largeur du tableau : 50% de la page -->
+
+                <!-- légende -->
+                <caption>Polpulation européenne</caption>
+
+                <!-- Entête du tableau-->
+                <thead>
+                    <tr>
+                        <th>Pays</th>
+                        <th>Population</th>
+                    </tr>
+                </thead>
+
+                <!-- Corps du tableau -->
+                <tbody>
+                    <tr>
+                        <td>France </td>
+                        <td>66 Millions</td>
+                    </tr>
+                    <tr>
+                        <td>Allemagne </td>
+                        <td>82 Millions</td>
+                    </tr>
+                    <tr>
+                        <td>Espagne </td>
+                        <td>47 Millions</td>
+                    </tr>
+                    <tr>
+                        <td>Hollande </td>
+                        <td>35 Millions</td>
+                    </tr>
+                </tbody>
+
+                <!-- Pied du tableau -->
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+
+                                <!-- LIEN -->
+        <div>
+            <h5> <i>&#9757</i> Liens - Titre h5</h5>
+            <!-- "i" = icone ou remplacez par "span" -->
+                    <!-- a= ancor (eng) = encre (fr) -->
+            <a href="http://htmlcheatsheet.com/" target="_blank">HTML Cheap Sheet</a>
+                <!-- html cheatsheet : site pour trouver des code facilement  -->
+
+                <!-- le "br" revient à la ligne entre les 2 liens sinon l'un à coté de l'autre -->
+            <br>
+            <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank">Icone en HTML</a>
+                <!-- site pour trouver des icone : copiez la reference  -->
+            <a href="https://pixabay.com/fr/"></a>
+            <!-- Site pour ressource photos et video -->
+        </div>
+
+                                <!-- VIDEO -->
+        <div> 
+            <h6>Video - Titre h6</h6>
+            <video src="./Vidéo/140111 (1080p).mp4" height="150px" autoplay loop muted></video> 
+            <!-- height = taille de la video -->
+            <!-- autoplay = lire automatiquement -->
+            <!-- loop = relancez à chaq1ue fin de cycle -->
+            <!-- muted = son coupé -->
+
+        </div>
+
+                            <!-- 6 sortes de titre maximum par page -->
+
+        
+    </section>
+
+    <br>
+
+    <section>
+                                <!-- FORMULAIRE -->
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+            <!-- Chaque "input est un bloc à par entiere dans le bloc formulaire" -->
+            <label for="name">Nom</label><input type="text" id="name" placeholder="Entrez votre nom">
+            <!-- le "label" est relier à l'"ID"-->
+            <!-- type = texte, tel, email, date, nombre, .... -->
+            <!-- placeholder = ce qui sera inscrit dans la case--> 
+            <label for="Prenom">Prénom</label><input type="text" id="Prenom" placeholder="Entrez votre prenom">
+            <label for="naissance">Date de naissance</label><input type="date" id="naissance"><br>
+            <label for="email">Email</label><input type="email" id="email">
+            <label for="tel">Telephone</label><input type="tel"><br>
+            <!-- Nombre -->
+            <label for="nombre">Mettez un nombre</label><input type="number" min="0" max="150" step="2">
+
+            <!-- INPUT SELECT -->
+            <label for="gender">Genre</label>
+            <select id="gender">
+                <option value="homme">Homme</option>
+                <option selected value="femme">Femme</option>
+                <!-- selected = valeur par defaut -->
+            </select> <br>
+
+            <!-- INPUT RADIO -->
+            <div>
+                <input type="radio" checked id="human" name="type"><label for="human">Humain</label>
+                <input type="radio" id="dog" name="type"><label for="dog">Chien</label>
+                <input type="radio" id="cat" name="type"><label for="cat">Chat</label>
+                <!-- checked = pour selectionner par default -->
+            </div>
+
+            <!-- ZONE DE TEXTE -->
+                <textarea name="" id="" cols="30" rows="10" placeholder="Entrez votre texte ici"></textarea>
+
+                <br>
+            <!-- INPUT CHECKBOX -->
+            <!-- Syntaxe differente selon la place de la checkbox -->
+            <label for=""><input type="checkbox">Acceptez les CGV</label>
+            <br>
+            <label for="">oui</label><input type="checkbox">
+            <label for="">non</label><input type="checkbox">
+            <br>
+
+            <!-- INPUT SUBMIT -->
+            <input type="submit" value="Valider">
+            <!-- Le submit valide les information renseigner dans ce qui est compris 
+                dans "form" et fait l'action indiquer dans l'attribut "action"  -->
+
+        </form>
+    </section>
+
+    <footer>
+        <a href="mailto:exemple@gmail.com">Ecrivez moi</a>
+        <!-- Ouvre la boite mail de l'utilisateur avec l'adresse mail indiqué pré-remplis -->
+
+        <a href="adressedufichier.txt" download="nom du fichier">Telecharger la notice</a>
+    </footer>
+    
+</body>
+</html>
